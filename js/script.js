@@ -38,3 +38,11 @@ tarefa.addEventListener("keypress", function (t) {
     }
 });
 
+lista.onclick = function() {
+ var itemSelecionado = event.target
+
+        itemSelecionado.classList.toggle("active")
+ 
+
+}
+
