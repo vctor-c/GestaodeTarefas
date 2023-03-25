@@ -5,7 +5,7 @@ const lista = document.querySelector("#lista")
 
 function mostrarLista() {
     if (tarefa.value.length != 0) { // verifica se existe algum valor no entrada de texto
-        
+
         // deixa a div visivel
         exibirLista.classList.remove("d-none")
 
@@ -38,11 +38,8 @@ tarefa.addEventListener("keypress", function (t) {
     }
 });
 
-lista.onclick = function() {
- var itemSelecionado = event.target
-
-        itemSelecionado.classList.toggle("active")
- 
-
+// pega posicacao quando clicar em algum item da lista
+lista.onclick = function () {
+    event.target.classList.toggle("active") // deixa ativo caso o campo nao estaja ativo, e deixa desativado caso esteja ativado
 }
 
